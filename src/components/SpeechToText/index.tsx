@@ -8,10 +8,10 @@ export default function SpeechToText({setTranscript}: { setTranscript: (t: strin
 
     const [isListening, setIsListening] = useState(false);
     const {transcript, browserSupportsSpeechRecognition} = useSpeechRecognition()
-    
+
     useEffect(() => {
         setTranscript(transcript);
-    }, [transcript]);
+    }, [transcript, setTranscript]);
 
 
     if (!browserSupportsSpeechRecognition) {
