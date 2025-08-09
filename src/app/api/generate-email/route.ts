@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import {NextRequest, NextResponse} from 'next/server';
 import {ChatOpenAI} from '@langchain/openai';
 import {PromptTemplate} from '@langchain/core/prompts';
