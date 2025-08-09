@@ -31,8 +31,7 @@ const Dashboard = () => {
     return (
         <ClientOnly>
             <div
-
-                className="w-full mt-8 min-h-screen p-4 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-stretch">
+                className="w-full mt-8 min-h-screen p-4 md:p-8 flex flex-col md:flex-row gap-6 items-center md:items-stretch">
 
                 <SpeechToText setTranscript={setTranscript}/>
 
